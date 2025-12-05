@@ -5,6 +5,7 @@ const snippets = [
   { path: '/counter', name: 'Counter' },
   { path: '/todo', name: 'Todo' },
   { path: '/todo-obj', name: 'Todo Object' },
+  { path: '/use-context', name: 'useContext' },
   { path: '/use-window-size', name: 'Use Window Size' },
   { path: '/task-management', name: 'Task Management' },
   { path: '/books-app', name: 'Books App' },
