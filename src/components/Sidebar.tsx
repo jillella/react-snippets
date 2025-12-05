@@ -9,6 +9,7 @@ const snippets = [
   { path: '/use-effect', name: 'useEffect' },
   { path: '/use-context', name: 'useContext' },
   { path: '/use-ref', name: 'useRef' },
+  { path: '/use-reducer', name: 'useReducer' },
   { path: '/use-window-size', name: 'Use Window Size' },
   { path: '/task-management', name: 'Task Management' },
   { path: '/books-app', name: 'Books App' },

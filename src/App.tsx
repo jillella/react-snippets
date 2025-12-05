@@ -9,6 +9,7 @@ import TodoObj from './snippets/todo-obj'
 import UseContext from './snippets/react-hooks/useContext'
 import UseEffect from './snippets/react-hooks/useEffect'
 import UseRef from './snippets/react-hooks/useRef'
+import UseReducer from './snippets/react-hooks/useReducer'
 import UseState from './snippets/react-hooks/useState'
 import UseWindowSizeDemo from './coding-test/smbc/usewindowsize-demo'
 import TaskManagement from './coding-test/sqor-ai/task-management'
@@ -27,6 +28,7 @@ function App() {
           <Route path="/use-context" element={<UseContext />} />
           <Route path="/use-effect" element={<UseEffect />} />
           <Route path="/use-ref" element={<UseRef />} />
+          <Route path="/use-reducer" element={<UseReducer />} />
           <Route path="/use-state" element={<UseState />} />
           <Route path="/use-window-size" element={<UseWindowSizeDemo />} />
           <Route path="/task-management" element={<TaskManagement />} />
