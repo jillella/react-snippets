@@ -22,6 +22,7 @@ import ReduxCounter from './snippets/redux/ReduxCounter'
 import GridExample from './snippets/ag-grid/GridExample'
 import FetchExample from './snippets/api/fetch'
 import AxiosExample from './snippets/api/axios'
+import ButtonDemo from './snippets/components/button/button-demo'
 function App() {
   return (
     <div className="app-container">
@@ -47,6 +48,7 @@ function App() {
           <Route path="/ag-grid" element={<GridExample />} />
           <Route path="/fetch" element={<FetchExample />} />
           <Route path="/axios" element={<AxiosExample />} />
+          <Route path="/button" element={<ButtonDemo />} />
           <Route path="/task-management" element={<TaskManagement />} />
           <Route path="/books-app" element={<BooksApp />} />
         </Routes>

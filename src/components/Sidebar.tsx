@@ -23,6 +23,12 @@ const categories = [
     ],
   },
   {
+    title: 'Components',
+    items: [
+      { path: '/button', name: 'Button' },
+    ],
+  },
+  {
     title: 'Examples',
     items: [
       { path: '/jsx', name: 'JSX' },
