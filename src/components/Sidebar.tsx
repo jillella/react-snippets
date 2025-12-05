@@ -13,6 +13,7 @@ const snippets = [
   { path: '/use-callback', name: 'useCallback' },
   { path: '/use-callback-2', name: 'useCallback 2' },
   { path: '/use-memo', name: 'useMemo' },
+  { path: '/use-fetch', name: 'useFetch (Custom Hook)' },
   { path: '/use-window-size', name: 'Use Window Size' },
   { path: '/task-management', name: 'Task Management' },
   { path: '/books-app', name: 'Books App' },
