@@ -5,6 +5,9 @@ const snippets = [
   { path: '/counter', name: 'Counter' },
   { path: '/todo', name: 'Todo' },
   { path: '/todo-obj', name: 'Todo Object' },
+  { path: '/use-window-size', name: 'Use Window Size' },
+  { path: '/task-management', name: 'Task Management' },
+  { path: '/books-app', name: 'Books App' },
 ]
 
 function Sidebar() {
@@ -12,7 +15,9 @@ function Sidebar() {
 
   return (
     <nav className="sidebar">
-      <h2>React Snippets</h2>
+      <h2>
+        <Link to="/">React Snippets</Link>
+      </h2>
       <ul>
         {snippets.map((snippet) => (
           <li key={snippet.path}>

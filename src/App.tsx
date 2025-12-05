@@ -5,7 +5,9 @@ import JSX from './snippets/jsx'
 import Counter from './snippets/counter'
 import Todo from './snippets/todo'
 import TodoObj from './snippets/todo-obj'
-
+import UseWindowSizeDemo from './snippets/hooks/usewindowsize-demo'
+import TaskManagement from './coding-test/sqor-ai/task-management'
+import BooksApp from './coding-test/jpmc/books-app'
 function App() {
   return (
     <div className="app-container">
@@ -17,6 +19,9 @@ function App() {
           <Route path="/counter" element={<Counter />} />
           <Route path="/todo" element={<Todo />} />
           <Route path="/todo-obj" element={<TodoObj />} />
+          <Route path="/use-window-size" element={<UseWindowSizeDemo />} />
+          <Route path="/task-management" element={<TaskManagement />} />
+          <Route path="/books-app" element={<BooksApp />} />
         </Routes>
       </main>
     </div>
