@@ -29,6 +29,7 @@ const categories = [
       { path: '/counter', name: 'Counter' },
       { path: '/todo', name: 'Todo' },
       { path: '/todo-obj', name: 'Todo Object' },
+      { path: '/redux', name: 'Redux' },
     ],
   },
   {

@@ -18,6 +18,7 @@ import UseWindowSizeDemo from './coding-test/smbc/usewindowsize-demo'
 import TaskManagement from './coding-test/sqor-ai/task-management'
 import BooksApp from './coding-test/jpmc/books-app'
 import UseFetch from './snippets/custom-hooks/useFetch'
+import ReduxCounter from './snippets/redux/ReduxCounter'
 function App() {
   return (
     <div className="app-container">
@@ -39,6 +40,7 @@ function App() {
           <Route path="/use-state" element={<UseState />} />
           <Route path="/use-window-size" element={<UseWindowSizeDemo />} />
           <Route path="/use-fetch" element={<UseFetch />} />
+          <Route path="/redux" element={<ReduxCounter />} />
           <Route path="/task-management" element={<TaskManagement />} />
           <Route path="/books-app" element={<BooksApp />} />
         </Routes>
