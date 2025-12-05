@@ -19,6 +19,7 @@ import TaskManagement from './coding-test/sqor-ai/task-management'
 import BooksApp from './coding-test/jpmc/books-app'
 import UseFetch from './snippets/custom-hooks/useFetch'
 import ReduxCounter from './snippets/redux/ReduxCounter'
+import GridExample from './snippets/ag-grid/GridExample'
 function App() {
   return (
     <div className="app-container">
@@ -41,6 +42,7 @@ function App() {
           <Route path="/use-window-size" element={<UseWindowSizeDemo />} />
           <Route path="/use-fetch" element={<UseFetch />} />
           <Route path="/redux" element={<ReduxCounter />} />
+          <Route path="/ag-grid" element={<GridExample />} />
           <Route path="/task-management" element={<TaskManagement />} />
           <Route path="/books-app" element={<BooksApp />} />
         </Routes>

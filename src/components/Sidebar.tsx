@@ -30,6 +30,7 @@ const categories = [
       { path: '/todo', name: 'Todo' },
       { path: '/todo-obj', name: 'Todo Object' },
       { path: '/redux', name: 'Redux' },
+      { path: '/ag-grid', name: 'AG Grid' },
     ],
   },
   {

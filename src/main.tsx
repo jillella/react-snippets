@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import { store } from './snippets/redux/store'
 import './index.css'
+import 'ag-grid-community/styles/ag-grid.css'
+import 'ag-grid-community/styles/ag-theme-quartz.css'
 import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
