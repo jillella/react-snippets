@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
 function Todo() {
-  const [todoList, setTodoList] = useState([]);
+  const [todoList, setTodoList] = useState<string[]>([]);
   const [newTask, setNewTask] = useState('');
 
-  const handleChange = (event) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setNewTask(event.target.value);
   };
 
@@ -36,7 +36,7 @@ function Todo() {
   //   setTodoList(newTodoList);
   // };
 
-  const deleteTask = (taskName) => {
+  const deleteTask = (taskName: string) => {
     setTodoList(todoList.filter((task) => task !== taskName));
   };
 

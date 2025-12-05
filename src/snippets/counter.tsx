@@ -14,9 +14,9 @@ function Counter() {
   }
 
   // Reset the count to 0
-  function reset() {
-    setCount(0);
-  }
+  // function reset() {
+  //   setCount(0);
+  // }
 
   // Arrow function to increment and decrement the count
   // const increment = () => {

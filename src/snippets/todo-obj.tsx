@@ -1,15 +1,21 @@
 import { useState } from 'react';
 
+interface Task {
+  id: number;
+  taskName: string;
+  completed: boolean;
+}
+
 function TodoObj() {
-  const [todoList, setTodoList] = useState([]);
+  const [todoList, setTodoList] = useState<Task[]>([]);
   const [newTask, setNewTask] = useState('');
 
-  const handleChange = (event) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setNewTask(event.target.value);
   };
 
   const addTask = () => {
-    const task = {
+    const task: Task = {
       id: todoList.length + 1,
       taskName: newTask,
       completed: false,
@@ -18,7 +24,7 @@ function TodoObj() {
     setNewTask('');
   };
 
-  const completeTask = (id) => {
+  const completeTask = (id: number) => {
     setTodoList(todoList.map((task) => {
       if (task.id === id) {
         return { ...task, completed: true };
@@ -50,7 +56,7 @@ function TodoObj() {
   //   setTodoList(newTodoList);
   // };
 
-  const deleteTask = (id) => {
+  const deleteTask = (id: number) => {
     setTodoList(todoList.filter((task) => task.id !== id));
   };
 
