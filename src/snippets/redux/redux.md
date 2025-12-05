@@ -28,6 +28,29 @@ It contains:
 - Reducer functions (how state updates)
 - Action creators (functions that return actions)
 
+# Typed Hooks (`hooks.ts`)
+While you can use `useDispatch` and `useSelector` directly from `react-redux`, creating typed versions provides better TypeScript support.
+
+```4:5:src/snippets/redux/hooks.ts
+export const useAppDispatch = useDispatch.withTypes<AppDispatch>();
+export const useAppSelector = useSelector.withTypes<RootState>();
+```
+
+**Why use typed hooks?**
+- **Without typed hooks**: You need to manually type them each time:
+  ```typescript
+  const count = useSelector((state: RootState) => state.counter.value);
+  const dispatch = useDispatch<AppDispatch>();
+  ```
+
+- **With typed hooks**: Types are automatically inferred:
+  ```typescript
+  const count = useAppSelector((state) => state.counter.value);
+  const dispatch = useAppDispatch();
+  ```
+
+The typed hooks use React Redux v9's `.withTypes()` API, which is the recommended pattern for TypeScript projects. This provides better type safety, autocomplete, and cleaner code throughout your app.
+
 # Redux flow:
 
 ## 1. **Store Setup** (`store.ts`)
