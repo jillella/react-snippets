@@ -34,6 +34,13 @@ const categories = [
     ],
   },
   {
+    title: 'API',
+    items: [
+      { path: '/fetch', name: 'Fetch' },
+      { path: '/axios', name: 'Axios' },
+    ],
+  },
+  {
     title: 'Coding Test',
     items: [
       { path: '/task-management', name: 'Task Management' },
